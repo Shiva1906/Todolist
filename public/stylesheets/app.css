@@ -1,0 +1,40 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1501618669935-18b6ecb13d6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+
+    background-size: cover;
+}
+#alert_container{
+ margin-top: 3.8rem;
+}
+#border_form{
+    border: 3px solid black;
+    border-radius: 0.5rem;
+   box-sizing: content-box;
+}
+
+/* #nav-items {
+    font-size: 1.25rem;
+}
+#nav-items li a:hover{
+    color: grey;
+}
+#navbar_brand{
+    font-size: 1.25rem;
+}
+.fa-list-alt{
+    font-size: 1.5rem;
+} */
+#index_container{
+    width: 30%;
+    margin: 12rem auto;
+    background-color: black;
+    color: white;
+    border: 5px solid black;
+    border-radius: 25% 10%;
+    border-color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#index_container h1{
+    margin-bottom: 10px;
+}

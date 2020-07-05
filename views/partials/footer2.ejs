@@ -1,0 +1,13 @@
+<script>
+    $(".todolist_container ul").on("click","span",function(event){
+      $(this).parent().fadeOut(500,function(){
+           $(this).remove();
+          });
+     event.stopPropagation();
+    });
+    $(".fa-plus").click(function(){
+        $("input[type='text']").fadeToggle();    
+    });
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,129 @@
+#container_id{
+	width: 360px;
+	margin: 12rem auto;	
+	background-color: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.navbar{
+	 background-attachment: fixed ;
+}
+.todolist_container h1
+{
+	background-color: #2980b9;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+
+}
+.todolist_container li{
+	background-color: #fff;
+	margin: 0 ;
+	height: 40px;
+	color: #666;
+	line-height: 40px;
+}
+.todolist_container ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+.completed{
+	color: black;
+	text-decoration: line-through 2px solid rgb(75, 75, 75);
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1501618669935-18b6ecb13d6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+
+	background-size : cover;
+
+	background-attachment: fixed;
+}
+input[type='text']{
+	background-color: #f7f7f7 ;
+	font-size: 18px;
+	color: #2980b9;
+	margin: 0;
+	padding: 13px 13px 13px 20px;
+	width: 100%;
+	box-sizing: border-box;
+	border :3px solid rgba(0,0,0,0);
+}
+input[type='text']:focus{
+	border: 3px solid #2980b9;
+	background-color: #fff;
+	outline: none;
+}
+input[type='submit']{
+	display: inline-block;
+	text-align: center;
+	background-color: inherit;
+	width: 80% ;
+	margin: 0 ;
+	height: 40px;
+	color: #666;
+	border: none;
+	outline: none;
+	line-height: 40px;
+}
+span{
+	background-color: red;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	display: inline-block;
+	width: 0;
+	color: white;
+	transition: 0.2s linear ;
+	opacity: 0;
+}
+.todolist_container li:hover span{
+	width: 40px;
+	opacity: 1.0;
+}
+.btn:hover{
+     height: auto;
+}
+.todolist_container li:nth-child(2n){
+background-color: #f7f7f7;
+}
+.fa-plus{
+	float: right;
+}
+/* #nav-items {
+    font-size: 1.25rem;
+}*/
+#nav-items li a:hover{
+    color: grey;
+}
+#alert_container{
+	margin-top: 3.8rem;
+   }
+/*#navbar_brand{
+    font-size: 1.25rem;
+} */
+.fa-list-alt{
+    font-size: 1.5rem;
+}
+#delete_button{
+	background-color: inherit;
+	border: none;
+	height: 40px ;
+    outline: none;
+	transition: 0.2s linear ;	
+}
+#delete_button :hover{
+height: 30px;
+padding: 0%;
+color: white;
+opacity: 1;
+}
+#form-inline{
+	display: inline;
+	margin: auto;
+}
+
+

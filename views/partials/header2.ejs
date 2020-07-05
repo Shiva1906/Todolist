@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <!-- //////////my stylesheet //////////// -->
+    <link rel="stylesheet" href="./stylesheets/todolist.css">
+    <!--/////////// Bootstrap-4 /////////////// -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--/////////// Font Awesome /////////////// -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   	<script src="https://kit.fontawesome.com/bca146c23c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" 
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand"id="navbar_brand" href="/"><i class="far fa-list-alt"></i> ToDo List</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div id="nav-items">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <%    if(!currentUser){  %>
+            <li class="nav-item active">
+              <a class="nav-link" href="/register">Signup</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/login">Login</a>
+            </li> 
+       <%   }else{      %>
+          <li class="nav-item active">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li> 
+       <%   } %>
+        </ul>
+      </div>
+  </div>
+</nav>
+<div class="container" id="alert_container">
+  <% if(error && error.length > 0){ %>
+    <div class="alert alert-danger" role="alert">
+        <%= error %>
+    </div>
+  <% } %>
+  <% if(success && success.length > 0){ %>
+    <div class="alert alert-success" role="alert">
+        <%= success %>
+    </div>
+  <% } %>
+</div>
