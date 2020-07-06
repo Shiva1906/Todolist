@@ -11,13 +11,15 @@ const Passport = require("passport"),
      methodoverride= require("method-override");
 const user = require("./models/user.js");
 var app= express();
+require("dotenv").config();
 var jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const { window } = new JSDOM();
 const { document } = (new JSDOM('')).window;
 global.document = document;
 var $ = require("jquery")(window);
-mongoose.connect("mongodb://localhost:27017/project1",{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify: false});
+var url = process.env.databaseURL || "mongodb://localhost:27017/project1";
+mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify: false});
 app.set("view engine","ejs");
 app.use(methodoverride("_method"));
 app.use(require("express-session")({
