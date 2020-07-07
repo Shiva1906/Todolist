@@ -27,6 +27,19 @@
   <% } }) %>
 </ul>
 </div>
-
-
+<script>
+  $("input[type='submit']").on("click",function(){
+  $(this).toggleClass("completed")
+});
+  $(".todolist_container ul").on("click","span",function(event){
+    $(this).parent().fadeOut(500,function(){
+         $(this).remove();
+        });
+   event.stopPropagation();
+  });
+  $(".fa-plus").click(function(){
+      $("input[type='text']").fadeToggle();    
+  });
+  </script>
+<%- include ("partials/footer2.ejs") %>
 

@@ -1,7 +1,6 @@
 body{
    background-image: url(../images/background.jpg);
     background-size: cover;
-    background-repeat: none;
 }
 #alert_container{
  margin-top: 3.8rem;
