@@ -125,6 +125,9 @@ app.post("/register",function(req,res){
 });
 //=========================Login Routes=====================//
 app.get("/login",function(req,res){
+  if(req.isAuthenticated())
+    res.redirect("/todolist");
+  else
    res.render("login");
 });
 app.post("/login",passport.authenticate("local",{

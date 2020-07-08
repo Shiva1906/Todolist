@@ -5,24 +5,19 @@ body{
 #alert_container{
  margin-top: 3.8rem;
 }
+
 #border_form{
     border: 3px solid black;
     border-radius: 0.5rem;
    box-sizing: content-box;
 }
+#nav_left :hover{
+    color: gray;
+}
+#nav_rigth  :hover{
+ color: gray;
+}
 
-/* #nav-items {
-    font-size: 1.25rem;
-}
-#nav-items li a:hover{
-    color: grey;
-}
-#navbar_brand{
-    font-size: 1.25rem;
-}
-.fa-list-alt{
-    font-size: 1.5rem;
-} */
 #index_container{
     width: 360px;
     margin: 12rem auto;

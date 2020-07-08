@@ -4,9 +4,7 @@
 	background-color: #f7f7f7;
 	box-shadow: 0 0 3px rgba(0,0,0,0.1);
 }
-.navbar{
-	 background-attachment: fixed ;
-}
+
 .todolist_container h1
 {
 	background-color: #2980b9;
@@ -95,8 +93,11 @@ background-color: #f7f7f7;
 /* #nav-items {
     font-size: 1.25rem;
 }*/
-#nav-items li a:hover{
-    color: grey;
+#nav_left :hover{
+    color: gray;
+}
+#nav_rigth  :hover{
+ color: gray;
 }
 #alert_container{
 	margin-top: 3.8rem;
